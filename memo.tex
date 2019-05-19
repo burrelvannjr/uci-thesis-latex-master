@@ -1,0 +1,152 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 1.0 (1/6/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Matthew J. Miller
+% http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%  PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+\usepackage{csquotes}
+\usepackage{charter} % Use the Charter font for the document text
+\usepackage{setspace}
+%\linespread{1.5}
+%\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
+%\includegraphics[width=1.2\linewidth]{logo.png}}} % Company/institution logo at the top left of the page
+%\makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+\newlfmP{sigsize=0pt} % Slightly decrease the height of the signature field
+%\newlfmP{addrfromphone} % Print a phone number under the sender's address
+%\newlfmP{addrfromemail} % Print an email address under the sender's address
+%\PhrPhone{Phone} % Customize the "Telephone" text
+%\PhrEmail{Email} % Customize the "E-mail" text
+
+%\lthUiuc % Print the company/institution logo
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+%\namefrom{C. Ben Gibson} % Name
+
+\addrfrom{
+\today\\[12pt] % Date
+%4100 Calit2 Building \\ % Address
+%UCI, California, 92617
+}
+
+%\phonefrom{(251) 510-0864} % Phone number
+
+%\emailfrom{cbgibson@uci.edu} % Email address
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING/CLOSING
+%----------------------------------------------------------------------------------------
+
+\greetto{Dear Committee:} % Greeting text
+\closeline{Sincerely, \newline Burrel} % Closing text
+
+\nameto{Edwin Amenta, David Meyer, Charles Ragin, and Rory McVeigh} % Addressee of the letter above the to address
+
+\addrto{
+\emph{Dissertation Committee} \\ % To address
+%University of California, Irvine \\
+%123 Pleasant Lane \\
+%City, State 12345
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{newlfm}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+Please find my responses to your prior comments below. \newline%the suggestion of Reviewer 3, we have changed the title of the paper to ``The Bootstrapped Robustness Assessment for Qualitative Comparative Analysis. Due to these changes, we have also changed the name of the package (braQCA) and it's components (baQCA and brQCA).
+
+%Thank you. \newline
+
+\textbf{Chapter 1}:
+
+I have added a brief introduction to the dissertation. \newline 
+
+
+\textbf{Chapter 2}: 
+
+Given the committee's concern regarding the quality of the manuscript, I've now revised the chapter to be more descriptive: The chapter now describes changes in marijuana discourse over time. 
+
+Any advice about augmenting various sections of this chapter is truly appreciated. \newline
+
+
+
+
+\textbf{Chapter 3}: \newline
+
+
+\textbf{Chapter 4}: 
+
+\textit{David's Comments}:
+
+I have addressed some of David's comments regarding the age of the citations. In many places, I have included more updated citations. 
+
+In the ``history'' section, I've included citations as well as discussed the run-up to state-level legalization initiatives. 
+
+In the section 4.3 on ``Support for Social Liberalization Policies,'' now called ``Policy Positions and the Role of Communities'' I am unsure what is meant by the comment:
+\begin{quote}
+Is this a departure for otherwise liberal parents on social issues, or are parents just more conservative overall?
+\end{quote}
+Any clarification is appreciated.
+
+Also, David mentioned that he is interested how individual patterns of younger, and more liberal people fits into the story regarding support for legalization. I'm wondering how you envision examining youth/liberal positions further without distracting from the story put forth here regarding parenthood and the structure of communities. I do find that there is very little difference between median ages for high parental segregation counties (at or above the mean segregation) and low segregation counties. These distinct areas do, however, have huge differences in their support for Democrats, where segregated areas also tend to show strong support for democrats.
+
+I appreciate David's question about the characteristics of these parent segregated communities. To address this, I've added a bit of a description of some of the communities in the ``Parental Segregation'' subsection of the ``Data \& Methods'' section, where I describe the calculation of the measure. 
+
+In the ``Data \& Methods'' section, David asked whether wealthier areas have more inequality. By breaking up the data, I found that for places with high median incomes (at or above the median), inequality (Gini) was .438, whereas places with low median incomes (below the median), inequality (Gini) was .424 -- so both high and low income areas have similar levels of inequality. But I'm not sure what is implied by the question. Here, I am making the argument that more equality in incomes (or less spread in the distribution of incomes) may contribute to a general sense that maintaining mobility is possible, whereas in places with extreme spreads in the distribution of incomes (more inequality) may incite fear that mobility changes, especially mobility drops are possible. And this threat can contribute to a general sense of fear that legal marijuana could initiate a mobility decline. In areas with low inequality, legal marijuana is less of a threat because mobilities don't fall far. 
+
+David made a comment about everything correlating. To ease concerns, the correlation matrix can be found at the end of the chapter. David also mentioned that it seems that the segregation measure is an effect of something else. I think what is implied here is that there might be some collinearity with other variables. To be sure, we can see in the correlation matrix, the measure of parental segregation is most correlated with the Democratic voter measure and the Marriage measure. 
+
+In the ``Results'' section, per David's suggestion, instead of just describing the coefficients in the model, {\color{red}I give examples of counties with high and low levels of support and low and high levels of segregation}.
+
+Next steps include explaining why there are high levels of support in certain places. \newline
+
+\textit{Rory's Comments}:
+
+In Rory's previous email, he described ways in which the argument could be made simpler. I've tried to accomplish this in various ways. In the section on ``Parental Segregation'' and the subsection on ``Parental Segregation and Politics'' incorporate these simpler arguments about how in segregated spaces, parents' decreased exposure (and therefore) opposition pairs with nonparents' freedom to use (and lack of fear about) marijuana.  In this section, I redirect my argument away from ``parents having a lack of concern -- since they're around other families'' to ``parents being concerned, but experiencing a lack of \textit{threat} in segregated environments.''
+
+In these same sections, I give closer attention to the distribution fo people, not just the size of the groups with certain attributes. Doing so, I think, makes the message about segregation (and composition) being relevant for aggregate support in places.
+
+Additionally, throughout the chapter, I've tried to emphasize the importance of place rather than individual-level support. 
+
+
+\textbf{Chapter 5}: 
+
+I have added a brief conclusion that discusses the take-aways from the previous three chapters.
+
+%\setlength\parindent{24pt}
+%\indent C. Ben Gibson \\ 
+%\indent Department of Sociology \\ 
+%\indent University of California, Irvine \\
+%\indent 4100 Calit2 Building\\
+%\indent UCI, California, 92617\\
+%\indent Phone: (251) 510-0864 (cell)\\
+%\indent Email: cbgibson@uci.edu\\
+
+%----------------------------------------------------------------------------------------
+
+\end{newlfm}
+\end{document}
