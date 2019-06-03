@@ -85,7 +85,7 @@ Given this shift, I expect to find a shift in narratives about marijuana over ti
 
 \section{Discursive Change Processes}
 
-The study of discourse has been central to work in the sociology of culture \citep{dimaggio_1997,swidler_1986,lamont_1992}. In recent years, the study of discourse has also come to the forefront of work in political sociology, with increased focus on the influence of advocacy organizations on public discourse \citep{bail_2012,earl_2004,mccammon_et_al_2007,ghaziani_and_baldassarri_2011,vasi_et_al_2015,gamson_and_modigliani_1989,andrews_and_caren_2010}. Importantly, organizations must first be covered by news media, which provides the opportunity to gain `` standing'' or serve as legitimate representatives for their issues and have their preferred messages conveyed \citep{amenta_et_al_2012,ferree_et_al_2002,elliott_et_al_2016}. Drawing on previous work on framing \citep{goffman_1974,benford_and_snow_2000}, organizations can impact public conversation about issues \citep{bail_et_al_2017} and initiate discursive change by offering their own diagnoses of and solutions to problems \citep{bail_2012,snow_et_al_2007,benford_and_snow_2000}. Frames that `fit' the broader discursive environment \citep{mccammon_et_al_2007} or those that articulate widespread beliefs and values usually survive over alternative frames \citep{mccammon_et_al_2001,snow_et_al_2007,gamson_and_modigliani_1989}, because their frames ``are more easily integrated into broader media narratives'' on an issue \citep[858]{bail_2012} and appear familiar, realistic, or legitimate. 
+The study of discourse has been central to work in the sociology of culture \citep{dimaggio_1997,swidler_1986,lamont_1992}. In recent years, the study of discourse has also come to the forefront of work in political sociology, with increased focus on the influence of advocacy organizations on public discourse \citep{bail_2012,earl_2004,mccammon_et_al_2007,ghaziani_and_baldassarri_2011,vasi_et_al_2015,gamson_and_modigliani_1989,andrews_and_caren_2010}. Importantly, organizations must first be covered by news media, which provides the opportunity to gain ``standing'' or serve as legitimate representatives for their issues and have their preferred messages conveyed \citep{amenta_et_al_2012,ferree_et_al_2002,elliott_et_al_2016}. Drawing on previous work on framing \citep{goffman_1974,benford_and_snow_2000}, organizations can impact public conversation about issues \citep{bail_et_al_2017} and initiate discursive change by offering their own diagnoses of and solutions to problems \citep{bail_2012,snow_et_al_2007,benford_and_snow_2000}. Frames that `fit' the broader discursive environment \citep{mccammon_et_al_2007} or those that articulate widespread beliefs and values usually survive over alternative frames \citep{mccammon_et_al_2001,snow_et_al_2007,gamson_and_modigliani_1989}, because their frames ``are more easily integrated into broader media narratives'' on an issue \citep[858]{bail_2012} and appear familiar, realistic, or legitimate. 
 
 
 
@@ -113,12 +113,24 @@ I argue that, by linking discourse about contested issues to additional, more in
 
 Given my interest in \textit{whether} and \textit{how} marijuana discourse shifted over time, I analyze text from print news media across the United States. To do so, I rely on the ProQuest newspaper database. I constrain the analysis to 1990 and on because coverage on marijuana was relatively low prior to 1990, and because this time frame immediately followed Reagan's intensified ``War on Drugs'' and ``Just Say No'' campaign. 
 
-To track discursive change, I rely on articles about marijuana in the Proquest database from 1990 to 2016. Because marijuana advocacy organizations may have had an impact on coverage, I separately searched for articles about marijuana in the absence of advocacy organizations, and articles about marijuana that included advocacy organizations. To accomplish this,  I wrote a Python script to identify and download all local articles from Proquest that mention ``marijuana'' between 1990 and 2016.\footnote{This does not include variants of the word marijuana, or the word cannabis} Because national newspapers may be more likely to cover national issues over local issues, I exclude national newspapers, including the \textit{New York Times}, the \textit{Los Angeles Times}, the \textit{Washington Post}, and the \textit{Wall Street Journal}. In addition, I exclude articles that mention at least one of the four main marijuana advocacy organizations. Therefore, I also exclude articles that mention National Organization for the Reform of Marijuana Laws (NORML), Marijuana Policy Project (MPP), Drug Policy Alliance (DPA), and Students for Sensible Drug Policy (SSDP), and their variants. In total, there were 14,163 articles mentioning marijuana. After removing duplicate articles, articles outside of the U.S. or located in the U.S. capitol\footnote{ProQuest sometimes mistakenly identifies non-U.S. articles when only-U.S. articles are specified.}, short articles (e.g. articles with fewer than 100 words), and articles that are not fully searchable,\footnote{Articles with fewer than about 900 words.}, I am left with 10,096 locally-based articles that mention marijuana in some fashion. In addition, I removed articles that come from ``alternative'' or sensationalized newspapers. To figure out whether or not the newspaper was an ``alternative newspaper,'' I searched the websites for each newspaper, removing any newspaper that claimed that it was an alternative newspaper. In sum, I am left with  5,893 articles about marijuana which do not include mention of marijuana advocacy organizations. %498 are positive, 74 have plagiarism
+To track discursive change, I rely on articles about marijuana in the Proquest database from 1990 to 2016. Because marijuana advocacy organizations may have had an impact on coverage, I separately searched for articles about marijuana in the absence of advocacy organizations, and articles about marijuana that included advocacy organizations. To accomplish this,  I wrote a Python script to identify and download all local articles from Proquest that mention ``marijuana'' between 1990 and 2016.\footnote{This does not include variants of the word marijuana, or the word cannabis} Because national newspapers may be more likely to cover national issues over local issues, I exclude national newspapers, including the \textit{New York Times}, the \textit{Los Angeles Times}, the \textit{Washington Post}, and the \textit{Wall Street Journal}. In addition, I exclude articles that mention at least one of the four main marijuana advocacy organizations. Therefore, I also exclude articles that mention National Organization for the Reform of Marijuana Laws (NORML), Marijuana Policy Project (MPP), Drug Policy Alliance (DPA), and Students for Sensible Drug Policy (SSDP), and their variants. In total, there were 14,163 articles mentioning marijuana. After removing duplicate articles, articles outside of the U.S. or located in the U.S. capitol\footnote{ProQuest sometimes mistakenly identifies non-U.S. articles when only-U.S. articles are specified.}, short articles (e.g. articles with fewer than 100 words), and articles that are not fully searchable,\footnote{Articles with fewer than about 900 words.}, I am left with 10,096 locally-based articles, across 185 newspapers, that mention marijuana in some fashion. In addition, I removed articles that come from ``alternative'' or sensationalized newspapers. To figure out whether or not the newspaper was an ``alternative newspaper,'' I searched the websites for each newspaper, removing any newspaper that claimed that it was an alternative newspaper. As can be seen in Table \ref{tab:local_coverage}, I am left with 5,893 articles, across 100 newspapers, about marijuana which do not include mention of marijuana advocacy organizations. %498 are positive, 74 have plagiarism
 
 
-Because marijuana advocacy organizations' discussion of marijuana may be important for discursive change on marijuana, I also include coverage of ``marijuana'' alongside coverage of marijuana advocacy organizations. As such, I wrote a separate Python script to identify and download all articles from Proquest that mention ``marijuana'' and any one of the four largest marijuana advocacy organizations (and the variants of their names) between 1990 and 2016. Therefore, the script was able to capture all coverage of ``marijuana'' coupled with coverage of marijuana advocacy organizations, including the National Organization for the Reform of Marijuana Laws (NORML), Marijuana Policy Project (MPP), Drug Policy Alliance (DPA), and Students for Sensible Drug Policy (SSDP).\footnote{Importantly, I separate these sets of coverage for future empirical work on the impact of organizations on the discursive shift.} In total, there were 1,616 articles mentioning a marijuana movement organization. After cleaning the data set of articles by removing duplicate articles, I am left with 1,150 articles mentioning marijuana advocacy organizations. In addition, after removing and articles coming from alternative news sources, I am left with 787 marijuana organization-related articles. For these articles, I include a dummy code to represent that they include mentions of organizations. In sum, there are 6,680 articles used for the analysis. 
+\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/tables/table_local.tex}
 
 
+Because marijuana advocacy organizations' discussion of marijuana may be important for discursive change on marijuana, I also include coverage of ``marijuana'' alongside coverage of marijuana advocacy organizations. As such, I wrote a separate Python script to identify and download all articles from Proquest that mention ``marijuana'' and any one of the four largest marijuana advocacy organizations (and the variants of their names) between 1990 and 2016. Therefore, the script was able to capture all coverage of ``marijuana'' coupled with coverage of marijuana advocacy organizations, including the National Organization for the Reform of Marijuana Laws (NORML), Marijuana Policy Project (MPP), Drug Policy Alliance (DPA), and Students for Sensible Drug Policy (SSDP).\footnote{Importantly, I separate these sets of coverage for future empirical work on the impact of organizations on the discursive shift.} In total, there were 1,616 articles mentioning a marijuana movement organization. After cleaning the data set of articles by removing duplicate articles, I am left with 1,150 articles mentioning marijuana advocacy organizations. In addition, after removing and articles coming from alternative news sources, I am left with 787 marijuana organization-related articles from 62 newspapers (see Table \ref{tab:mm_coverage}). For these articles, I include a dummy code to represent that they include mentions of organizations. 
+
+
+\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/tables/table_mm.tex}
+
+
+As can be seen in Table \ref{tab:all_coverage}, there are a total of 6,680 articles used across these analyses. 
+
+
+\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/tables/table_all.tex}
+
+ 
 
 
 %The unit of analysis is at the article level.%I focus on local rather than national level discourse in print media given recent criticism against relying on national media sources \citep{earl_et_al_2004}\footnote{I therefore exclude the \textit{New York Times}, \textit{Los Angeles Times}, \textit{Wall Street Journal}, and \textit{Washington Post}.}, and because marijuana movement organizations focus mainly on local level activism which may garner media attention (e.g. chapter meetings and campaigns for ballot initiatives) instead of distributing press releases.\footnote{Unlike women's jury rights studied by \citet{mccammon_et_al_2007} or the civil society organizations targeting Islam and Muslims studied by \citet{bail_2012}, many of the marijuana movement organizations show little evidence of information distribution, therefore, locating items such as press releases, speeches, pamphlets or flyers, transcripts of television or public speeches proves difficult. In fact, much of the organizations activity centered on local chapter meetings (which rarely include meeting minutes or are transcribed) and public action during ballot initiative campaigns or events such as HempFest. Much of the movement's contemporary activism is geared towards maintaining a social media presence for local chapters. This activity, again, centers on promoting local initiatives. In the future, I hope to diversify the explanatory sources to include any movement-generated documents that have been found to influence media (see \citealt{sobieraj_2011}) including mission statements, meeting minutes, and newsletters/flyers promoted.}
@@ -131,16 +143,16 @@ Because marijuana advocacy organizations' discussion of marijuana may be importa
 
 %\subsection{\it{Dependent Variable}}
 
-Because I am interested in the shift away from negative discourse about marijuana, I categorize each article based on it's polarity or valence.\footnote{To prepare all documents for textual analysis, following the procedure used by \citet{bail_2012}, I use software in R to transform each article into fully-searchable sets of words, and clean the textual data by eliminating excessive words (e.g. stop-words such as numbers, conjunctions, and determiners), and transforming each word into it's stem variant.} I code each article with the assistance of a na\"{i}ve Bayes classifier in \textsf{R}'s \texttt{sentiment} package \citep{jurka_2012}. The na\"{i}ve Bayes algorithm uses a stock of trained text that has been associated with three types of polarity (positive, neutral, or negative), and tries to classify each document as one of the three polarities. I then create dummy codes for each article based on its polarity. 
-
-For example, in an article in the \textit{Tennessee Tribune} in 2013, the following was reported: 
+Because I am interested in the shift away from negative discourse about marijuana, I categorize each article based on it's polarity or valence.\footnote{To prepare all documents for textual analysis, following the procedure used by \citet{bail_2012}, I use software in R to transform each article into fully-searchable sets of words, and clean the textual data by eliminating excessive words (e.g. stop-words such as numbers, conjunctions, and determiners), and transforming each word into it's stem variant.} I code each article with the assistance of a na\"{i}ve Bayes classifier in \textsf{R}'s \texttt{sentiment} package \citep{jurka_2012}. The na\"{i}ve Bayes algorithm uses a stock of trained text that has been associated with three types of polarity (positive, neutral, or negative), and attempts to classify each document as one of the three polarities.\footnote{The stock of trained text comes from Janyce Wiebe's subjectivity lexicon \citep{wilson_et_al_2005}, which can be found at: \url{https://mpqa.cs.pitt.edu/lexicons/subj_lexicon/}.} In doing so, the algorithm simply compares the word stems in each article to word stems in each of the three dictionaries and classifies each word in the article as negative, neutral, or negative. Next, the algorithm calculates the log likelihood that a given article contains positive or negative sentiment, followed by a fit score, which is a ratio of the log likelihoods between positive and negative sentiment, where a score of `1' indicates neutral polarity in the article, a score below `1' indicates negative polarity, and a score above `1' indicates positive polarity. I simplified version of this process is below. In an article in the \textit{Tennessee Tribune} in 2013, Congressman Steve Cohen (D-TN) praised the Administration's shift on marijuana: 
 
 %1439216197
-\begin{quote}
-President Obama's Administration is making incremental progress to address the basic unfairness of our federal drug policy and law enforcement policy, and I appreciate that it has started to work on these important issues.
-\end{quote}
+\begin{quotation}
+\begin{singlespace}
+\noindent President Obama's Administration is making incremental progress to address the basic unfairness of our federal drug policy and law enforcement policy, and I appreciate that it has started to work on these important issues.\footnote{``Cohen Statement on Medicinal Marijuana.'' \textit{Tennessee Tribune}. September 5, 2013.}
+\end{singlespace}
+\end{quotation}
 
-In this section of the article, the words ``progress,'' ``address,'' and ``appreciate'' would be categorized as positive, and the word ``unfairness'' would be categorized as negative, given the linguistic dictionary -- a stock of trained keywords signifying negative, neutral, and positive coverage -- provided by the \texttt{sentiment} package in \textsf{R} \citep{jurka_2012}.\footnote{The dictionaries can be viewed through the package information provided by \citet{jurka_2012}.} As such, this section of the article would be categorized as positive, given that it would be given more positive codes than negative codes. In instances where there are equal amounts of negative and positive words in a text document, or where there are neither negative or positive words included, the article is coded as neutral. I use this dictionary to code the valence or polarity of each article, for all 6680 articles. 
+In this section of the article, the words ``progress,'' ``important,'' and ``appreciate'' would be categorized as positive, and the word ``unfairness'' would be categorized as negative, given the linguistic dictionary -- a stock of trained keywords signifying negative, neutral, and positive coverage -- provided by the \texttt{sentiment} package in \textsf{R} \citep{jurka_2012}.\footnote{The dictionaries can be viewed through the package information provided by \citet{jurka_2012}.} In simplified terms, this section of the article would be categorized as positive, given that it would be given more positive codes than negative codes. I therefore use this package (with the algorithm based on the subjectivity lexicon dictionary) to code the valence or polarity of each article, for all 6,680 articles. 
 
 
 
@@ -152,17 +164,95 @@ In this section of the article, the words ``progress,'' ``address,'' and ``appre
 %\subsection{\it{Independent Variable}}
 
 
-Given my interest in the frames included in coverage of marijuana, I give each article a code for the presence or absence of various frames. To select frames, I rely on a process of induction -- my selection of frames is based on the various connections with marijuana as discussed by previous researchers. In particular, I focus on eight frames about marijuana, based on prior research, which include ``liberties,'' ``rights,'' \citep{rosenthal_and_kubby_1996}, ``revenue,'' ``rights'' \citep{caulkins_et_al_2012,miron_2010}, ``patients,'' `rehabilitation,'' ``crime reduction, and ``policing (in communities of color),'' \citep{newhart_and_dolphin_2018,mosher_and_akins_2019,alexander_2010}. As such, I rely on keywords to select whether these frames are absent or present in coverage of marijuana. In the Table below, I outline the search terms used for identifying these frames. In the Table, ``+'' represents the logical operator ``OR'' and ``*'' represents the logical operator ``AND.''
+Given my interest in the frames included in coverage of marijuana, I give each article a code for the presence or absence of various frames. To select frames, I rely on a process of induction -- my selection of frames is based on the various frames that have been associated with marijuana over time. In particular, I focus on seven frames about marijuana, based on prior research. 
+
+In their work describing reasons why marijuana should be legal, \citet{rosenthal_and_kubby_1996}'s arguments center on the rights, as given by the Constitution, as well as Liberterian ideals like individual freedom and personal liberty to use marijuana without fear of retribution or governmental intrusion into private affairs. As such, I include two frames that capture ``rights,'' and ``liberties.''  Additionally, in recent years, there has been a shift in public framing of marijuana, alongside the shift toward statewide ballot initiatives as a venue for legalization \citep{mosher_and_akins_2019}. These frames have centered on the benefits of legalization for creating streams of revenue through taxation on regulated marijuana sales \citep{caulkins_et_al_2012,miron_2010}. I therefore include a frame related to ``revenue creation.'' \citet{newhart_and_dolphin_2018} have recently demonstrated that part of the broader fight for marijuana legalization necessarily depends on preceding fights for and successful medicalization. As such, discussions of legalization are often intertwined with discussions about the medicinal and public health benefits of marijuana, particularly for patients who might require alternative treatments for their medical issues. As such, I include a frame that centers on ``patients.'' Scholars have also focused on the restorative justice effects of marijuana legalization. This line of inquiry usually focuses on how legalization could redirect police resources away from hyper-policing in communities of color \citep{alexander_2010,davis_2003}, toward rehabilitation \citep{alexander_2010,mosher_and_akins_2019,davis_2003} and how legalization would restrict the flow of marijuana from underground drug markets, thereby reducing crime \citep{mosher_and_akins_2019,caulkins_et_al_2012}. 
+As such, include a frame that encompasses ``policing.''\footnote{Upon closer investigation of the data, I noticed that frames of ``crime reduction'' and ``rehabilitation'' often covered people arrested, their histories of marijuana use, their placement in rehabilitation facilities, and variable mentions of the term ``reduce.'' As such, they were removed from the analysis.} %,'' and ``crime reduction.'' 
+Finally, given the nature of coverage of marijuana as a political issue, and given literature that identifies institutional politics as newsworthy \citep{amenta_et_al_2012,galtung_and_ruge_1965}, I also include a ``politics'' frame.
+
+To identify the frames, I rely on keywords to select whether frames are absent or present in coverage of marijuana. In the Table below, I outline the search terms used for identifying these frames. In the Table, ``+'' represents the logical operator ``OR'' and ``*'' represents the logical operator ``AND.''
 
 \input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/tables/table1new.tex}
 
-For example, the following excerpt comes from an article in the \textit{Colorado Springs Independent} in 2013 that was coded as containing a ``revenue'' frame:
+In what follows below, I show examples of each frame by using article excerpts. For example, the following excerpt comes from an article in the \textit{Colorado Springs Independent} in 2013 that was coded as containing a ``revenue'' frame:
 
-\begin{quote}
-New city sales tax revenue from the venue would exceed \$275,000. (By comparison, medical marijuana last year brought in \$1.1 million in sales tax.) The stadium would cost about \$60 million to build.
-\end{quote}
+\begin{quotation}
+\begin{singlespace}
+\noindent New city sales tax revenue from the venue would exceed \$275,000. (By comparison, medical marijuana last year brought in \$1.1 million in sales tax.) The stadium would cost about \$60 million to build.\footnote{Zubeck, Pam. ``Talking a Good Game.'' \textit{Colorado Springs Independent}. July 3, 2013.}
+\end{singlespace}
+\end{quotation}
 
-As seen, although this article covers revenue from a stadium, it also compares that revenue to revenue generated by medical marijuana. 
+As seen, although this article covers revenue from a stadium, it also compares that revenue to revenue generated by medical marijuana. In total, there were 2,316 articles that included the ``revenue'' frame. Next, from an article in \textit{The Louisiana Weekly} in 2013 that was coded as containing a ``liberties'' frame:
+
+\begin{quotation}
+\begin{singlespace}
+\noindent On the eve of a new year, a libertarian strain pulses through America -- a get-government-out-of-my-personal-life sensibility that cuts across ideologies and is driven by a younger generation's cultural attitudes.\newline
+
+\noindent We've seen it in gay-marriage legalization and marijuana decriminalization.\footnote{Sidoti, Liz. ``Gun Debate Revives Enduring American Fight.'' \textit{The Louisiana Weekly}. January 14, 2013.}
+\end{singlespace}
+\end{quotation}
+
+Shown in the above excerpt, the author is drawing connections between the growth of Libertarian ideals in America and arguments in favor of not just marijuana, but also other issues like gay marriage (and beyond this, gun rights). In total, there were only 84 articles that included the ``liberties'' frame. Next, I include an excerpt from an article in \textit{The Boston Banner} in 2013 that was coded as containing a ``rights'' frame:
+
+\begin{quotation}
+\begin{singlespace}
+\noindent The Barack Obama administration has announced a set of proposals aimed at stemming the growth of the U.S. prison population and racial disparities in the criminal justice system - chief among them, the elimination of mandatory minimum sentencing for low-level drug offenses.\newline
+
+\noindent African Americans are nearly four times as likely to be arrested for marijuana possession than whites, despite similar usage rates between the two groups.\newline
+
+\noindent Mandatory minimum sentences are not only unfair in stature and consequence, they represent a serious threat to the civil rights gains and progress of the 1960s and '70s.\footnote{Kandil, Caitlin Yoshiko. ``Obama's Criminal Justice Reform Lauded for Historic Proposals.'' \textit{The Boston Banner}. August 15, 2013.}
+\end{singlespace}
+\end{quotation}
+
+In the above excerpt, we see how marijuana legalization and the removal of mandatory minimum sentences associated with marijuana infractions as a civil rights issue. In total, there were 1,255 articles that included the ``rights'' frame. I next give an example of the ``patient'' frame, from an article in the \textit{Atlanta Inquirer} in 2005:
+
+
+\begin{quotation}
+\begin{singlespace}
+\noindent When the U.S. Supreme Court ruled against medical-marijuana users, many critics of the decision thought the six-justice majority failed to show compassion for severely ill people. \newline
+
+\noindent Under California's Compassionate Use Act, doctors may prescribe marijuana to patients with severe medical problems. Those patients are then permitted to grow marijuana for their own use. The state closely regulates the prescription, cultivation, and use of the product to prevent others from obtaining it. (At least nine other states have similar laws.)\newline
+
+\noindent Many well-intentioned people say yes: of course, severely ill people should be able to grow and use marijuana by prescription without fear that federal agents will barge into their homes, destroy their plants, and charge them with unlawful possession.\newline
+
+\noindent Sick people need freedom, not permission, however compassionate the motive.\footnote{``Muddle At The Supreme Court Over Medical Marijuana.'' \textit{Atlanta Inquirer}. July 9, 2005.}
+\end{singlespace}
+\end{quotation}
+
+Here, we see that marijuana is being framed in terms of the patients, or groups of people with illnesses that could be treated through marijuana use. In total, there were 806 articles that included the ``patient'' frame. Next, I show the ``policing'' frame, which focuses not just on policing, but policing's effects on communities of color. This example comes from an article in the \textit{Sun Reporter} in 2015:
+
+
+\begin{quotation}
+\begin{singlespace}
+\noindent Blacks and Latinos are incarcerated at disproportionately higher rates in part because police target them for minor crimes. \newline
+
+\noindent Racial disparities that exist at every step in the criminal justice system, the report noted. That helpsexplain why Blacks and Latinos account for about 30 percent of the United States population, but 56 percent of the incarcerated population. \newline
+
+
+\noindent These trends are driven by race-neutral laws that still have a significant have racial impact, criminal justice professionals influenced by racial bias, an underfunded criminal justice system, and policies that impose strict "collateral consequences" that make it harder for ex-offenders to return their home after prison.\footnote{``Police Killings Underscore Need For Reform.'' \textit{Sun Reporter}. February 12, 2015.}
+\end{singlespace}
+\end{quotation}
+
+Here, the author draws attention to criminal justice practice (specifically policing) in communities of color, particularly regarding marijuana, as a reason for the spike in the prison population. In total, there were 126 articles that included the ``policing'' frame. Finally, I have an example of the ``politics'' frame, coming from the \textit{Milwaukee Courier} in 2012:
+
+
+\begin{quotation}
+\begin{singlespace}
+\noindent Election night ushered in some other political surprises as well. Last Tuesday's election was a watershed moment for the gay marriage movement. Voters in three states voted to legalize it - something no state had done before - and a fourth state voted against a proposed ban.\newline
+
+\noindent Tuesday's progressive electorate also weighed in on the issue of marijuana usage. Colorado and Washington became the first U.S. states to legalize the possession and sale of marijuana for recreational use -- in defiance of federal law.\footnote{``Capitol Report - The Dawning of Liberal America?'' \textit{Milwaukee Courier}. November 17, 2012.}
+\end{singlespace}
+\end{quotation}
+
+As can be seen, in this article, there is traditional electoral political coverage, of which marijuana is a topic covered. Below, I describe variations in coverage of marijuana in the presence and absence of organizations. 
+
+
+
+
+
+
+
+
 
 
 %Given my argument about the influence of the movement's discourse on marijuana discourse generally, I use novel plagiarism detection software, developed by \citet{welbers_and_van_atteveldt_2016}, to link articles with movement-initiated marijuana discourse to subsequent articles about marijuana. The software\footnote{\textit{RNewsflow}, in the R statistical environment, is designed to analyze homogeneity in text between two news articles (or corpora of text) while also tracing the diffusion of similar subsets of text across time.} compares strings of text in articles in the explanatory set (movement discourse about marijuana) to strings of text in subsequent articles in the outcome set (general discourse about marijuana). For example, an article from May 1, 1970 in which NORML discusses marijuana or is mentioned alongside a discussion of marijuana will be compared to all articles in the outcome set (non-movement mentions of marijuana) that occur on or after May 2, 1970. Each movement article then receives a similarity score to represent the proportion of text that is reported verbatim in every ``non-movement'' article (the outcome set). The creators of this software recommend a minimum similarity score cutoff of .40, which has been a reliable threshold for identifying sets of text that address similar events. It is therefore possible for an article to have multiple scores, representing varying similarities with numerous documents. Each article in the outcome/dependent variable set is then dummy coded to represent whether or not what it's text contains verbatim text (with a score of .40 or above) from an article with coverage of a marijuana movement organization \textit{alongside} a discussion of marijuana. This means that the marijuana could be projecting it's own frames about marijuana or be given standing on the marijuana issue. This approach is similar to those used by other scholars studying media coverage of social movements \citep{amenta_et_al_2009,andrews_and_caren_2010}.
@@ -186,27 +276,84 @@ As seen, although this article covers revenue from a stadium, it also compares t
 %--------------------------------------------------------------------------------------------------------------------------------------
 \section{Results}
 
-
-
-
-
-As seen in the figures below, there was a substantial change in marijuana coverage over time. In particular, it is important to recognize that there was a consistent increase in overall coverage of marijuana over time. The amount of attention to marijuana reached its peak in 2014, with just over 600 articles. We can see that there are two dramatic peaks in coverage -- in 2010 and 2014, respectively. These peaks coincide with ballot initiatives California, Alaska, and Washington state. 
+\subsection{Frames in Overall Coverage}
+%\textit{Frames in Overall Coverage}
+As seen in the figures below, there was a substantial change in marijuana coverage over time. In particular, in Figure \ref{fig:coverage}, it is important to recognize that there was a consistent increase in overall coverage of marijuana over time. The amount of attention to marijuana reached its peak in 2014, with just over 600 articles. We can see that there are two dramatic peaks in coverage -- in 2010 and 2014, respectively. These peaks coincide with ballot initiatives California, Alaska, and Oregon. 
 
 \input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/figures/figure1_a.tex}
 
 
 
+Coding the valence/polarity for each articles, reveals an interesting pattern: there was both a substantial decrease in negative attention to marijuana and an increase in neutral coverage of marijuana. As seen in the Figure \ref{fig:both_pct} below, the percent of negative coverage about marijuana only stayed consistently below fifty percent only after 2010. %in 1996 (when medical marijuana was on the ballot in California) and again in 2008. Only after 2010 did negative attention to marijuana consistently drop below fifty percent. 
+During this same time, we see that coverage of marijuana became increasingly neutral over time. In fact, a majority of attention to marijuana was neutral in later years, between 2013 and 2016. Given these data, there is a sense that marijuana discourse changed over time, becoming less negative -- a shift away from the dominant negative discourse on marijuana identified in prior research \citep{mosher_and_akins_2019,bonnie_and_whitebread_1970}. 
 
-Given the coding for valence/polarity of articles, there was both a substantial decrease in negative attention to marijuana and an increase in neutral coverage of marijuana. As seen in the figures below, the percent of negative coverage about marijuana only dropped below fifty percent in 1996 (when medical marijuana was on the ballot in California) and again in 2008. Only after 2010 did negative attention to marijuana consistently drop below fifty percent. During this same time, we see that coverage of marijuana became more neutral over time. In fact, a majority of attention to marijuana was neutral in later years, between 2013 and 2016. Given these data, there is a sense that marijuana discourse changed over time, becoming less negative -- a shift away from the dominant negative discourse on marijuana identified in prior research \citep{mosher_and_akins_2019,bonnie_and_whitebread_1970}. 
+\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/figures/figure1new.tex}
 
 
-\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/figures/figure1.tex}
+%%pct negative
+%\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/figures/figure1.tex}
 
-\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/figures/figure1_1.tex}
+%%pct neutral
+%\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/figures/figure1_1.tex}
 
-Finally, I use the aforementioned keywords to identify frames presented in articles about marijuana. As shown in the figure below, there are periodic drops in frames that coincide with national elections (Presidential re-elections and midterms), which is contrary to literature suggesting that elections increasing attention to political issues. Here we see large drops in most frames in 2004 and 2012, indicating that other frames may have come to dominate marijuana coverage when national issues reach the public agenda. To be sure, frames varied in quantity over time. Importantly, between 1990 and 2016, frames about revenue creation dominated nearly all yearly coverage. This indicates that often times, when discussing marijuana, these narratives were linked with discussions of revenue, money, or taxation. While the dominance of this frame is clear, narratives linking marijuana to political behavior came second. All frames exhibit some degree of variation over time, with frames of liberties, policing, and rehabilitation being the least frequent themes in almost every year of coverage. 
+I now turn to the frames presented in articles about marijuana. To be sure, all frames exhibit some degree of variation over time. As shown in the figures below, I have broken the frames into high, moderate, and low frequency frames for ease of interpretation. As seen in Figure \ref{fig:narratives_high}, there is a general increase in frames about politics and revenue creation.  Importantly, throughout nearly the entire period under investigation, discussions that linked marijuana to revenue, taxes, or many were the most prevalent. While the dominance of this frame is clear, narratives linking marijuana to politics came second, and oftentimes showed a similar, albeit lower, trend. In addition to the general growth in these two frames over time, there was also a large drop for both in 2012. Part of this drop may be due to higher levels of election coverage in 2012 that did not include mentions of marijuana. 
 
-\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/figures/figure2new.tex}
+
+%there are periodic drops in frames that coincide with national elections (Presidential re-elections and midterms), which is contrary to literature suggesting that elections increasing attention to political issues. Here we see large drops in most frames in 2004 and 2012, indicating that other frames may have come to dominate marijuana coverage when national issues reach the public agenda. To be sure, frames varied in quantity over time. Importantly, between 1990 and 2016, frames about revenue creation dominated nearly all yearly coverage. This indicates that often times, when discussing marijuana, these narratives were linked with discussions of revenue, money, or taxation. While the dominance of this frame is clear, narratives linking marijuana to political behavior came second. All frames exhibit some degree of variation over time, with 
+
+
+
+\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/figures/figure2_1.tex}
+
+
+I next turn to moderately covered frames in overall coverage in Figure \ref{fig:narratives_mid}. These include coverage of patients and rights. These two trends are relatively similar across time. We see brief spikes in coverage of marijuana associated with patients (e.g. medicinal uses) and rights in 2010 and 2014. These two spikes may be related to the added coverage of marijuana at when marijuana-related initiatives were put on the statewide ballots in California (2010), Alaska (2014), and Oregon (2014), which provided increased opportunities for marijuana to be linked with additional frames.
+
+\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/figures/figure2_2.tex}
+
+Finally, Figure \ref{fig:narratives_low} depicts low-frequency frames in news coverage of marijuana. From this figure, we can see that frames centering on liberties and policing remained relatively low (near zero) during the period of investigation. Only in later years, around 2013, did we see a slight increase in the policing frame, which may be related to increased coverage of police shootings of unarmed Black people and coverage of the Black Lives Matter organization. 
+
+\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/figures/figure2_3.tex}
+
+
+
+\subsection{Frames by Local versus Organization-Related Coverage}
+
+I next separate the above frames to compare differences in frames used between local coverage about marijuana only, and coverage about marijuana alongside mentions of marijuana advocacy organizations. Again, I present three figures that align with the high-, moderate-, and low-frequency frames presented above. These figures show the percentage of coverage in a given year that includes the various frames, broken out by whether or not the coverage also mentioned at least one of the four marijuana advocacy organizations. 
+
+Figure \ref{fig:both_narratives_high} depicts the percentage of all coverage in that year that includes politics or revenue creation frames. As we can see, general marijuana coverage tends to center on revenue as the topic of conversation, even if only around 30 percent of the time. In general (local) coverage of marijuana, politics was mentioned in connection with marijuana even less, often between 15 and 20 percent of the time. Turning to organizational coverage, we see that coverage of politics and revenue creation frames show considerable variability, with frames of revenue creation sometimes dominating coverage and frames of politics sometime dominating. 
+
+
+%For politics and revenue frames, there was a substantial increase in their coverage over time. This trend was less dramatic for articles that mentioned marijuana advocacy organizations, given that these occurred less frequently overall than coverage of marijuana only. 
+
+\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/figures/figure2_4.tex}
+
+
+Next, \ref{fig:both_narratives_mid} shows that coverage of organizations was more likely than general marijuana coverage to include frames that centered on patients and those that centered on rights. In addition, when compared to Figure \ref{fig:both_narratives_high} above, and Figure \ref{fig:both_narratives_low} below, we see that organizational coverage was most likely to include frames that focused on rights. When compared to all coverage, we can see that organizational coverage may be driving the amount of articles that include rights frames. 
+
+\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/figures/figure2_5.tex}
+
+
+Finally, Figure \ref{fig:both_narratives_low} shows that both general marijuana coverage as well as organization-related coverage were least likely to include frames about policing or liberties. Here we see that for both, there was near-zero percent of coverage that included these frames. There were brief spikes in liberties frames in organization-related coverage over time. In addition, both coverage sets show a minor spike in policing frames later in time. 
+
+\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/figures/figure2_6.tex}
+
+
+\subsection{Frames and Polarity}
+
+Do different frames impact the polarity of coverage? To investigate this further, in Figure \ref{fig:all_narratives_pct_neg} below, we can see how each frame, when used, has become less associated with negative polarity over time. The graphs are broken out by whether or not the frame appeared in general marijuana coverage or organization-related coverage. In addition, I order these graphs in terms of their total frequency over time (with the revenue appearing most frequently, and the policing frame appearing least frequently). 
+
+Beyond this, in Figure \ref{fig:all_narratives_pct_neu} below, we can see how each frame became more neutral over time. Again, graphs are broken out by local versus organization-related coverage, and are ordered by their total frequency over time (with the revenue appearing most frequently, and the policing frame appearing least frequently). As we see, for many frames, neutral coverage either hung around 50 percent of each frame's coverage, or increased over time. 
+
+\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/figures/figure2_7.tex}
+
+\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/figures/figure2_8.tex}
+
+
+
+To follow this up, I conducted a simple logistic regression of negative coverage on the various frames. In Table \ref{tab:logit}, we see that various frames have distinct impacts on negative polarity of an article. As seen below, more  frames have significant impacts on the polarity of coverage in general marijuana coverage than in organization-related coverage. In particularly, for general marijuana coverage, frames centering on liberties, patients, and politics significantly decrease the likelihood that an article is classified as negative. For organization-related coverage, however, none of the frames decrease the likelihood that an article is negative. Conversely, frames of revenue creation and policing increase the likelihood an article is classified as negative -- only policing frames impact negative polarity for organization-related articles. In sum, we see not only that frames were used variably over time, and that both general and organization-related coverage included these frames variably, but also that some frames (more than others) contributed to decreases in negative coverage over time. 
+
+
+
 
 
 %Table 2 presents logistic regression results for the likelihood of negative articles about marijuana in each state from 1990 to 2016, including state level fixed effects. Column 1 includes only the variables of interest, various narratives about marijuana. As shown, the coefficients for liberties, patients, and politics narratives about marijuana all have significant negative effects on the likelihood of negative coverage about marijuana in the U.S. This provides support for my claim that linking marijuana with American values narratives, in addition to beneficiary groups and traditional political processes is relevant for the overall decrease in negative discourse about marijuana. On the other hand, articles that include narratives about policing or revenue were more likely to be negative. Coefficients in logistic regression can be  interpreted by exponentiation, or $(e^{b} - 1)*100$, which gives the expected change in the dependent variable that coincides with a one-unit increase in the independent variable. In sum, articles with narratives about liberties, patients, or politics were had decreasing likelihoods of being negative -- they were associated with a 31, 22, and 29 percent decrease in the likelihood of negative coverage about marijuana.
@@ -226,6 +373,8 @@ Finally, I use the aforementioned keywords to identify frames presented in artic
 
 
 %The third and final model incorporates all measures. Overall, with the exception of the measure for whether or not legalization was on the ballot in that year, all previously significant variables maintain their significance with the outcome. In addition, the lagged variables of prior movement coverage and prior positive marijuana coverage maintain their non-significant relationships with the outcome. 
+
+\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/tables/table_pol.tex}
 
 %--------------------------------------------------------------------------------------------------------------------------------------
 \section{Conclusions} 
@@ -249,16 +398,16 @@ The current study investigates the characteristics of discursive change on conte
 %\renewcommand{\section}[2]{}%
 %\setlength{\bibhang}{40pt}%matches the indentation above for references
 %\bibliography{/Users/burrelvannjr/Dropbox/Professional/Research/References/library,/Users/burrelvannjr/Dropbox/Professional/Research/References/ext_library}
-\newpage
+%\newpage
 
 
 
 %--------------------------------------------------------------------------------------------------------------------------------------
-\section{Appendix}
+%\section{Appendix}
 
 %\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/tables/table_loc1.tex}
 
-\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/tables/table_all1.tex}
+
 
 %\input{/Users/burrelvannjr/Dropbox/Professional/Research/Projects/dissertation/chapters/ch2.movements-and-discourse/paper/tables/table_smo1.tex}
 

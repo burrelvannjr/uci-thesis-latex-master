@@ -1,0 +1,151 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 1.0 (1/6/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Matthew J. Miller
+% http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%  PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+\usepackage{csquotes}
+\usepackage{charter} % Use the Charter font for the document text
+\usepackage{setspace}
+%\linespread{1.5}
+%\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
+%\includegraphics[width=1.2\linewidth]{logo.png}}} % Company/institution logo at the top left of the page
+%\makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+\newlfmP{sigsize=0pt} % Slightly decrease the height of the signature field
+%\newlfmP{addrfromphone} % Print a phone number under the sender's address
+%\newlfmP{addrfromemail} % Print an email address under the sender's address
+%\PhrPhone{Phone} % Customize the "Telephone" text
+%\PhrEmail{Email} % Customize the "E-mail" text
+
+%\lthUiuc % Print the company/institution logo
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+%\namefrom{C. Ben Gibson} % Name
+
+\addrfrom{
+\today\\[12pt] % Date
+%4100 Calit2 Building \\ % Address
+%UCI, California, 92617
+}
+
+%\phonefrom{(251) 510-0864} % Phone number
+
+%\emailfrom{cbgibson@uci.edu} % Email address
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING/CLOSING
+%----------------------------------------------------------------------------------------
+
+\greetto{Dear Committee:} % Greeting text
+\closeline{Sincerely, \newline Burrel} % Closing text
+
+\nameto{Edwin Amenta, David Meyer, Charles Ragin, and Rory McVeigh} % Addressee of the letter above the to address
+
+\addrto{
+\emph{Dissertation Committee} \\ % To address
+%University of California, Irvine \\
+%123 Pleasant Lane \\
+%City, State 12345
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{newlfm}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+Please find my responses to your prior comments below. \newline%the suggestion of Reviewer 3, we have changed the title of the paper to ``The Bootstrapped Robustness Assessment for Qualitative Comparative Analysis. Due to these changes, we have also changed the name of the package (braQCA) and it's components (baQCA and brQCA).
+
+%Thank you. \newline
+
+\textbf{Chapter 1}:
+
+I have added a brief introduction to the dissertation. \newline 
+
+
+\textbf{Chapter 2}: 
+
+Given the committee's concern regarding the quality of the manuscript, I've now revised the chapter to be more descriptive: The chapter now describes changes in marijuana discourse over time. 
+
+Any advice about augmenting various sections of this chapter is truly appreciated. \newline
+
+
+
+
+\textbf{Chapter 3}: 
+
+\textit{Edwin's Comments}:
+
+.\newline
+
+
+\textit{David's Comments}:
+
+.\newline
+
+
+\textit{Charles' Comments}:
+
+Charles provided some questions and feedback on data and modeling choices. First, he mentioned that the dependent variable went to 2016, while the public opinion data were only until 2013, and that interpolation was not possible past 2013. This is correct. In the previous version, I used the values for 2013 (in each state) as the value for 2014--2016. This may be an issue, and because of this, I added a final public opinion poll (a CBS Poll from 2016, also from the Roper Center). Therefore, this problem has been solved. Related to this, Charles, do you think I should give more information about the polls? Or how do you suggest I cite them? 
+
+Charles mentioned that the data for Democratic vote also stopped (that I used the vote from 1990 and 2000). Actually, this is not true -- I forgot to update this section of the paper. The data actually include percent of the vote for the Democratic Presidential candidate in each of the following elections: 1988 (interpolated between 1988 and 1992, therefore values for 1990 are interpolated), 1992, 1996, 2000, 2004, 2008, 2012, and 2016. 
+
+Charles mentions that he would have liked to see a dichotomy for the diffusion measure, instead of the current version -- the proportion of a state's neighbors that had legalized. I ran the models with both versions  -- as a dichotomy and as the proportion, and the results are similar. In the paper, however, I chose to keep it as a proportion, much like Boushey (2016) did, and doing so also measures the (likely) increasing pressure to legalize (e.g. if most states around a state has legalized, it may increase the odds that voters or state legislatures would want to take up the marijuana legalization issue -- perhaps for fear of losing potential revenue to those nearby states). 
+
+I use population size as a control, as has been done in many previous studies of diffusion/adoption. The thinking is that population size may affect voter mobilization and thus the likelihood of passage. The same can be said of political competition -- studies of diffusion/adoption almost always include political competition as a measure over turnout. In the paper, I now outline why competition is important as a measure of how the \textit{distribution} of various interests from within the population might be better represented, rather than just interest in the election (which turnout would measure). I hope that is now better represented.
+
+Yes, I do use the data from Chapter 2, on positive coverage of marijuana -- coded from the algorithm -- and aggregated to the state-year. This includes local coverage of marijuana-only, and local \textit{national} coverage of marijuana alongside mentions of any of the four main marijuana advocacy organizations. This is also now better explained in chapter 2. \newline
+
+
+
+\textbf{Chapter 4}: 
+
+\textit{David's Comments}:
+
+.\newline
+
+\textit{Rory's Comments}:
+
+.\newline 
+
+
+\textbf{Chapter 5}: 
+
+I have added a brief conclusion that discusses the take-aways from the previous three chapters.
+
+%\setlength\parindent{24pt}
+%\indent C. Ben Gibson \\ 
+%\indent Department of Sociology \\ 
+%\indent University of California, Irvine \\
+%\indent 4100 Calit2 Building\\
+%\indent UCI, California, 92617\\
+%\indent Phone: (251) 510-0864 (cell)\\
+%\indent Email: cbgibson@uci.edu\\
+
+%----------------------------------------------------------------------------------------
+
+\end{newlfm}
+\end{document}
